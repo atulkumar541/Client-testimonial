@@ -1,0 +1,143 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #000;
+            font-family:;
+         }
+        .body_img{
+         background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+        }
+        .client_testimonial {
+            max-width: 850px;
+            background: linear-gradient(to bottom right, #33ccff 50%, #ff99cc 50%);
+            margin: 3% auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 5px grey;
+        }
+        
+        .form_input {
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            height: 35px;
+            border-radius: 5px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        @media(max-width: 576px){
+        	.first_name{
+        		flex-wrap:inherit;
+        	}
+        }
+        .form_input2 {
+          width: 100%;
+		  height: 150px;
+		  padding: 10px;
+		  box-sizing: border-box;		  
+		  border-radius: 5px;
+		  outline: none;
+		  resize: none;
+		  border: none;
+        }
+        .form_input3{
+        	width:18px !important; 
+        	height:18px !important; 
+        	position: relative !important        	      	         	     	
+        }
+        input [type="radio"]{
+          color: red;
+        }
+        label[for="check_2"]{
+        	font-size: 18px !important;
+        }
+        /*-------------------------star-rating--------------------------*/
+         .rating {
+			    display: flex;
+			    flex-direction: row-reverse;
+			    float: left;
+			    margin-top: -15px
+			    
+			}
+
+			.rating>input {
+			    display: none
+			}
+
+			.rating>label {
+			    position: relative;
+			    width: 1em;
+			    font-size:40px;
+			    color: #FFD600;
+			    cursor: pointer
+			}
+
+			.rating>label::before {
+			    content: "\2605";
+			    position: absolute;
+			    opacity: 0
+			}
+
+			.rating>label:hover:before,
+			.rating>label:hover~label:before {
+			    opacity: 1 !important
+			}
+
+			.rating>input:checked~label:before {
+			    opacity: 1
+			}
+
+			.rating:hover>input:checked~label:before {
+			    opacity: 0.4
+			}
+
+/*---------------------------drag and drop files--------------------------------------*/
+		    
+		.note {
+		  width: 500px;
+		  margin: 50px auto;
+		  font-size: 1.1em;
+		  color: #333;
+		  text-align: justify;
+		}
+		#drop-area {
+		  border: 2px dashed #ccc;
+		  border-radius: 20px;
+		  width: 100%;  
+		  padding: 20px;
+		}
+		#drop-area.highlight {
+		  border-color: purple;
+		}
+		.video_img{
+		  margin-top: 0;
+		}
+		.my-form {
+		  margin-bottom: 10px;
+		}
+		#gallery {
+		  margin-top: 10px;
+		}
+		#gallery img {
+		  width: 150px;
+		  margin-bottom: 10px;
+		  margin-right: 10px;
+		  vertical-align: middle;
+		}
+		.button {
+		  display: inline-block;
+		  padding: 10px;
+		  background: #ccc;
+		  cursor: pointer;
+		  border-radius: 5px;
+		  border: 1px solid #ccc;
+		}
+		.button:hover {
+		  background: #ddd;
+		}
+		#fileElem {
+		  display: none;
+		}
+		/*------------------------end--------------------------*/
+		
